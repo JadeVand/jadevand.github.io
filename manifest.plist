@@ -19,7 +19,7 @@
 					<key>needs-shine</key>
 					<false/>
 					<key>url</key>
-					<string>http://www.example.com/ios/large-image-url.jpg</string>
+					<string>http://jadevand.github.io/512.jpg</string>
 				</dict>
 				<dict>
 					<key>kind</key>
@@ -27,7 +27,7 @@
 					<key>needs-shine</key>
 					<false/>
 					<key>url</key>
-					<string>http://www.example.com/ios/small-image-url.jpg</string>
+					<string>http://jadevand.github.io/57.jpg</string>
 				</dict>
 			</array>
 			<key>metadata</key>
