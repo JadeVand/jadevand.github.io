@@ -33,7 +33,7 @@
 			<key>metadata</key>
 			<dict>
 				<key>bundle-identifier</key>
-				<string>com.example.Demo</string>
+				<string>ephemeral.jade.blankedephemeral</string>
 				<key>bundle-version</key>
 				<string>1.0</string>
 				<key>kind</key>
@@ -41,7 +41,7 @@
 				<key>subtitle</key>
 				<string>Subtitle for Application</string>
 				<key>title</key>
-				<string>Application Name</string>
+				<string>blankedephemeral</string>
 			</dict>
 		</dict>
 	</array>
