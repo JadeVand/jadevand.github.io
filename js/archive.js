@@ -68,6 +68,11 @@
         tfood.setAttribute("scope", "col");
         tfood.innerText = "name";
         tr.appendChild(tfood);
+
+        let tdportion = document.createElement("th");
+        tfood.setAttribute("scope", "col");
+        tfood.innerText = "name";
+        tr.appendChild(tfood);
         table.appendChild(thead);
         let tbody = document.createElement("tbody");
         var i = 0;

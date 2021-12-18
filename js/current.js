@@ -117,8 +117,8 @@ function displaycurrent() {
   tfood.innerText = "food";
   tr.appendChild(tfood);
   let tdportion = document.createElement("th");
-  tfood.setAttribute("scope", "col");
-  tfood.innerText = "portion";
+  tdportion.setAttribute("scope", "col");
+  tdportion.innerText = "portion";
   tr.appendChild(tdportion);
   table.appendChild(thead);
   let tbody = document.createElement("tbody");
@@ -139,7 +139,7 @@ function displaycurrent() {
         let tdfood = document.createElement("td");
         tdfood.innerText = itemjs.food;
         tr.appendChild(tdfood);
-        let tdfood = document.createElement("td");
+        let tdportion = document.createElement("td");
         tdportion.innerText = itemjs.quantity;
         tr.appendChild(tdportion);
         let tddropdown = createcurrentbutton(key);
