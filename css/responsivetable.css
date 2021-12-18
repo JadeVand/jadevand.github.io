@@ -1,0 +1,35 @@
+.btn-group {  
+    white-space: nowrap;              
+}
+
+@media (max-width: 767px) {
+    .table-responsive .dropdown-menu {
+        position: static !important;
+    }
+}
+@media (min-width: 768px) {
+    .table-responsive {
+        overflow: inherit;
+    }
+}
+.hasbeenfed{
+    background-color:rgb(237, 78, 111);
+}
+.hasgoneout{
+    background-color:rgb(170, 139, 224);
+}
+.restore-action{
+    background-color: rgb(147, 221, 101);
+}
+.remove-action{
+    background-color: rgb(248, 154, 39);
+}
+.archive-action{
+    background-color: rgb(252, 33, 37);
+}
+.dropdown-menu-color{
+    background-color: rgb(69, 77, 85);
+}
+.content-color{
+    background-color: rgb(33, 33, 33);
+}

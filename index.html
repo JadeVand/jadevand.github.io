@@ -1,8 +1,88 @@
-<html>
-    <head>BostonDogTOR</head>
-    <body>
-        <a href="itms-services://?action=download-manifest&url=https://jadevand.github.io/manifest.plist">
-            Demo Distribution
-        </a>
-    </body>
+<!doctype html>
+<html lang="en">
+  <head>
+  	<title>App</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+		
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsivetable.css">
+  </head>
+  <body>
+		<div class="map" id="map"></div>
+		<div class="wrapper d-flex align-items-stretch">
+			<nav id="sidebar">
+				<div class="custom-menu">
+					<button type="button" id="sidebarCollapse" class="btn btn-primary">
+	          <i class="fa fa-bars"></i>
+	          <span class="sr-only">Toggle Menu</span>
+	        </button>
+        </div>
+	  		<h1><a href="#" class="logo">App</a></h1>
+        <ul class="list-unstyled components mb-5">
+          <li class="active">
+            <a href="#" onclick="attemptwrite()"><span class="fa fa-home mr-3"></span> Login</a>
+          </li>
+          <li>
+              <a href="#" onclick="displaycurrent()"><span class="fa fa-user mr-3"></span> Current</a>
+          </li>
+          <li>
+            <a href="#" onclick="displayarchive()"><span class="fa fa-folder mr-3"></span> Archive</a>
+          </li>
+          <li>
+            <a href="#" onclick="createform()"><span class="fa fa-sticky-note mr-3"></span> Create</a>
+          </li>
+          <li>
+            <a href="#" onclick="restorefromremotedb()"><span class="fa fa-sticky-note mr-3"></span> Restore</a>
+          </li>
+        </ul>
+
+    	</nav>
+
+        <!-- Page Content  -->
+      <div id="content" class="p-4 p-md-5 pt-5 content-color">
+        <div id="Login">
+
+        </div>
+        <div id="Current">
+
+        </div>
+        <div id="Archive">
+
+        </div>
+        <div id="Create">
+          
+        </div>
+      </div>
+		</div>
+    
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/firebase-app.js"></script>
+    <script src="js/firebase-database.js"></script>
+    <script src="js/firebase-auth.js"></script>
+    <script src="js/core.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/create.js"></script>
+    <script src="js/current.js"></script>
+    <script src="js/restore.js"></script>
+    <script src="js/archive.js"></script>
+    <script>
+        let firebaseConfig = {
+            apiKey: "AIzaSyBLCxEcq9ZQCcJWjdnlGKnv6IR4uyGkMuA",
+            authDomain: "apptest-b4346.firebaseapp.com",
+            projectId: "apptest-b4346",
+            storageBucket: "apptest-b4346.appspot.com",
+            messagingSenderId: "646337608183",
+            appId: "1:646337608183:web:e6225ff56672f1254096f2",
+            measurementId: "${config.measurementId}"
+        };
+        firebase.initializeApp(firebaseConfig);
+    </script>
+  </body>
 </html>
