@@ -134,7 +134,7 @@ function displaycurrent() {
         thitem.innerText = i++;
         tr.appendChild(thitem);
         let td = document.createElement("td");
-        td.innerText = name
+        td.innerText = itemjs.name;
         tr.appendChild(td);
         let tdfood = document.createElement("td");
         tdfood.innerText = itemjs.food;
