@@ -59,20 +59,16 @@
         thash.setAttribute("scope", "col");
         thash.innerText = "#";
         tr.appendChild(thash);
-        let tname = document.createElement("th");
-        tname.setAttribute("scope", "col");
-        tname.innerText = "uid";
         thead.appendChild(tr);
-        tr.appendChild(tname);
         let tfood = document.createElement("th");
         tfood.setAttribute("scope", "col");
         tfood.innerText = "name";
         tr.appendChild(tfood);
 
         let tdportion = document.createElement("th");
-        tfood.setAttribute("scope", "col");
-        tfood.innerText = "name";
-        tr.appendChild(tfood);
+        tdportion.setAttribute("scope", "col");
+        tdportion.innerText = "owner";
+        tr.appendChild(tdportion);
         table.appendChild(thead);
         let tbody = document.createElement("tbody");
         var i = 0;
@@ -86,7 +82,7 @@
           thitem.innerText = i++;
           tr.appendChild(thitem);
           let td = document.createElement("td");
-          td.innerText = key
+          td.innerText = itemjs.name;
           tr.appendChild(td);
           let tdfood = document.createElement("td");
           tdfood.innerText = itemjs.owner;
