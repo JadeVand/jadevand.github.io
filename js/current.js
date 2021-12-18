@@ -109,13 +109,17 @@ function displaycurrent() {
   tr.appendChild(thash);
   let tname = document.createElement("th");
   tname.setAttribute("scope", "col");
-  tname.innerText = "uid";
+  tname.innerText = "name";
   thead.appendChild(tr);
   tr.appendChild(tname);
   let tfood = document.createElement("th");
   tfood.setAttribute("scope", "col");
-  tfood.innerText = "name";
+  tfood.innerText = "food";
   tr.appendChild(tfood);
+  let tdportion = document.createElement("th");
+  tfood.setAttribute("scope", "col");
+  tfood.innerText = "portion";
+  tr.appendChild(tdportion);
   table.appendChild(thead);
   let tbody = document.createElement("tbody");
   var i = 0;
@@ -130,11 +134,14 @@ function displaycurrent() {
         thitem.innerText = i++;
         tr.appendChild(thitem);
         let td = document.createElement("td");
-        td.innerText = key
+        td.innerText = name
         tr.appendChild(td);
         let tdfood = document.createElement("td");
-        tdfood.innerText = itemjs.owner;
+        tdfood.innerText = itemjs.food;
         tr.appendChild(tdfood);
+        let tdfood = document.createElement("td");
+        tdportion.innerText = itemjs.quantity;
+        tr.appendChild(tdportion);
         let tddropdown = createcurrentbutton(key);
         tr.appendChild(tddropdown);
         tbody.appendChild(tr);
